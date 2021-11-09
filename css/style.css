@@ -1,0 +1,52 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body{
+    width: 100%;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background: #e76f51;
+}
+.searchBx{
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.searchBx .input{
+    width: 40px;
+    height: 40px;
+    border: 1px solid #bb3e03;
+    outline: none;
+    border-radius: 40px;
+    padding-left: 10px ;
+    font-family: 'Bad Script' , cursive;
+    font-size: 15px;
+    transition: .5s;
+    transition-delay: .3s;
+}
+.searchBx .input.active{
+    width: 200px;
+}
+.searchBx .icon{
+    width: 40px;
+    height: 40px;
+    background: #bb3e03;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: #fff;
+    border-radius: 50%;
+    position: absolute;
+    top: 0;
+    right: 0;
+    cursor: pointer;
+    transition: .5s;
+}
+.searchBx .icon.active{
+    transform: rotate(360deg);
+}
